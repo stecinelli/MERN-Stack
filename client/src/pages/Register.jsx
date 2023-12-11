@@ -17,7 +17,7 @@ const Register = () => {
           defautValue="smith"
         />
         <FormRow type="text" name="location" defautValue="earth" />
-        <FormRow type="email" name="email" defautValue="john@exemple.com" />
+        <FormRow type="email" name="email" defautValue="john@gmail.com" />
         <FormRow type="password" name="password" defautValue="secret123" />
         <button type="submit" className="btn btn-block">
           submit
