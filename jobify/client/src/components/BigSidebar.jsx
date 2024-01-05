@@ -1,5 +1,5 @@
 import NavLinks from './NavLinks';
-import Logo from '../components/Logo';
+import Logo from './Logo';
 import Wrapper from '../assets/wrappers/BigSidebar';
 import { useDashboardContext } from '../pages/DashboardLayout';
 
