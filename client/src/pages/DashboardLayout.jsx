@@ -4,14 +4,16 @@ import SmallSidebar from '../components/SmallSidebar';
 import BigSidebar from '../components/BigSidebar';
 import Navbar from '../components/Navbar';
 import { useState, createContext, useContext } from 'react';
+import { checkDefaultTheme } from '../App';
 
 const DashboardContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 const DashboardLayout = () => {
   const user = { name: 'john' };
 
   const [showSidebar, setShowSidebar] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(checkDefaultTheme());
 
   const toggleDarkTheme = () => {
     const newDarkTheme = !isDarkTheme;
