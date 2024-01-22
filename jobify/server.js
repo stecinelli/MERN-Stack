@@ -25,3 +25,7 @@ app.use((err, req, res, next) => {
   console.log(err);
   res.status(500).json({ msg: 'something went wrong' });
 });
+
+app.listen(port, () => {
+  console.log(`server running on PORT ${port}....`);
+});
